@@ -84,21 +84,45 @@ section {
     font-family: var(--fonte3);
     font-size: 3.5em; /* 4.5% da tela */
 }
+section > p {
+    padding-top: 1em;
+}
 
 section.normal {
     background-color: white;
-    color: black;
+    color: black; 
 }
 
 section.imagem {
     background-color: rgb(51, 48, 48);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.333);
+    background-attachment: fixed;
+
+    /*como vai ser usada na section 1 e 2, podemos usar o background sixe aqui e vai ser aplicada para os dois*/
+    background-size: cover;
 }
 
-section.imagem >p {
+section.imagem > p {
     display: inline-block; /* caixa adapta ao conteudo */
     padding: 5px;
-    background-color: rgb(0, 0, 0.253);
+    background-color: rgba(0, 0, 1, 0.514);
+    text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+
+     /*A propriedade CSS é usada para dimensionar a imagem de fundo para ser o maior possível, de modo que a área de fundo seja completamente coberta pela imagem de fundo.*/
+    /* background-size: cover; */
+}
+
+section#img02 {
+    background-image: url(imagens/background002.jpg);
+
+     /*A propriedade CSS é usada para dimensionar a imagem de fundo para ser o maior possível, de modo que a área de fundo seja completamente coberta pela imagem de fundo.*/
+    /* background-size: cover; */
 }
 
 footer {
