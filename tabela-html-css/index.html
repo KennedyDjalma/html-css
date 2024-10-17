@@ -17,6 +17,7 @@
         table {
             height: 400px;
             width: 400px;
+            border: 4px solid blue;
             border-collapse: collapse; /* retira os espacinhos entre as td */
             margin: auto; /* centralizar a tabela */
         }
@@ -29,6 +30,7 @@
             border: 1px solid black;
             padding: 8px;
             text-align: center; /* alinhar os textos dos dados */
+            vertical-align:middle ; /* alinhamento vertical */
         }
         
         td.dado {
@@ -46,14 +48,17 @@
         .tr6 {
             background-color: #2626b8;
         }
+
+        td.numero{
+            text-align: right;
+            background-color: burlywood;
+        }
         
-        /*  */
     </style>
 </head>
 <body>
 
     <h1>Minha primeira Tabela</h1>
-
     <!-- 
         HIERARQUIA DE TABELA (SIMPLES)
         TABLE = TABELA
@@ -62,7 +67,6 @@
         TABLE DATA = DADO DE TABELA [TD]
         -->
         <!---->
-
     <table>
         <tr class="linha1"> <!-- primeira linha -->
             <td>A1</td>
@@ -108,7 +112,7 @@
 
         <tr> <!-- sétima linha-->
             <td>A7</td>
-            <td>B7</td>
+            <td class="numero">B7</td>
             <td>C7</td>
             <td>D7</td>
         </tr>
@@ -121,15 +125,12 @@
         </tr>
 
         <tr> <!-- nona linha-->
-            <td>A9</td>
+            <td class="numero">A9</td>
             <td>B9</td>
             <td>C9</td>
             <td>D9</td>
         </tr>
-
-
     </table>
-
 
     
 </body>
