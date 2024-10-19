@@ -7,35 +7,47 @@
             <style>
                 body {
                     font-family: Arial, Helvetica, sans-serif;
-                    
+                    background-color: #a8dce7;
                 }
 
                 h1 {
                     text-align: center;
+                    color: #101422;
                 }
 
                 table {
+                    background-color: #FFFFFF;
                     margin: auto auto;
                     width: 500px;
                     border-collapse: collapse;
                 }
 
                 td,th {
-                    border: 1px solid black;
+                    border: 1px solid #101422;
                     padding: 10px;
                 }
+
                 .num {
                     text-align: right;
                 }
 
+                tr.regiao{
+                    background-color: #272b3b;
+                }
+
                 .regiao {
-                    background-color: grey;
+                    background-color: #272b3b;
                     color: white;
                 }
 
                 thead {
-                    background-color: gray;
+                    background-color: #272b3b;
                     color: white;
+                }
+
+                tfoot {
+                    background-color: #272b3b;
+                    color: #FFFFFF;
                 }
 
             </style>
@@ -64,13 +76,13 @@
 
     <tbody>
 
-        <tr>
+        <tr class="regiao">
             <th class="regiao">Brasil</th>
             <td class="num">212.583.750</td>
         </tr>
 
 
-        <tr>
+        <tr class="regiao">
             <th class="regiao">Norte</th>
             <td class="num">18.669.345</td>
         </tr>
@@ -96,7 +108,7 @@
         </tr>
 
 
-        <tr>
+        <tr class="regiao">
             <th class="regiao">Nordeste</th>
             <td class="num">57.112.096</td>
         </tr>
@@ -147,7 +159,7 @@
         </tr>
 
 
-        <tr>
+        <tr class="regiao">
             <th class="regiao">Sudeste</th>
             <td class="num">88.617.693</td>
         </tr>
@@ -173,7 +185,7 @@
         </tr>
 
 
-        <tr>
+        <tr class="regiao">
             <th class="regiao">Sul</th>
             <td class="num">31.113.021</td>
         </tr>
@@ -194,7 +206,7 @@
         </tr>
 
 
-        <tr>
+        <tr class="regiao">
             <th class="regiao">Centro-Oeste</th>
             <td class="num">17.071.595</td>
         </tr>
