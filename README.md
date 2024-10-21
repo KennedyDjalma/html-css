@@ -16,6 +16,10 @@ Execultar <a href="https://kennedydjalma.github.io/html-css/ex022/fundo006" targ
 
 Execultar <a href="https://kennedydjalma.github.io/html-css/ex022/fundo007" target="_blank">Fundo007</a>
 
+Pasta: Desafio/d012
+
+Execultar <a href="https://kennedydjalma.github.io/html-css/desafio/d012/" target="_blank">Cordel Moderno</a>
+
 Pasta: tabela-html-css
 
 Execultar o desafio tabela <a href="https://kennedydjalma.github.io/html-css/tabela-html-css/" target="_blank">Primeira tabela</a>
