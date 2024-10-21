@@ -20,6 +20,13 @@
             padding: 10px;
             width: 600px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #4b2d27;
         }
 
         thead{
@@ -58,9 +65,11 @@
 
     <table>
         <thead>
-            <th>Posição</th>
-            <th>Município</th>
-            <th>População</th>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Município</th>
+                <th scope="col">População</th>
+            </tr>
         </thead>
         
         <tbody>
@@ -156,7 +165,7 @@
 
             <tr>
                 <td class="posicao">16</td>
-                <td>	Serra Talhada</td>
+                <td>Serra Talhada</td>
                 <td class="pop">98 143</td>
             </tr>
             
@@ -184,12 +193,79 @@
                 <td class="pop">83 647</td>
             </tr>
 
+            <tr>
+                <td class="posicao">21</td>
+                <td>Carpina</td>
+                <td class="pop">83 205</td>
+            </tr>
+
+            <tr>
+                <td class="posicao">22</td>
+                <td>Arcoverde</td>
+                <td class="pop">82 003</td>
+            </tr>
+            
+            <tr>
+                <td class="posicao">23</td>
+                <td>Ouricuri</td>
+                <td class="pop">68 329</td>
+            </tr>
+            
+            <tr>
+                <td class="posicao">24</td>
+                <td>Surubim</td>
+                <td class="pop">67 515</td>
+            </tr>
+            
+            <tr>
+                <td class="posicao">25</td>
+                <td>Salgueiro</td>
+                <td class="pop">65 635</td>
+            </tr>
+            
+            <tr>
+                <td class="posicao">26</td>
+                <td>Pesqueira</td>
+                <td class="pop">65 408</td>
+            </tr>
+            
+            <tr>
+                <td class="posicao">27</td>
+                <td>Bezerros</td>
+                <td class="pop">64 809</td>
+            </tr>
+            
+            <tr>
+                <td class="posicao">28</td>
+                <td>Escada</td>
+                <td class="pop">62 252</td>
+            </tr>
+            
+            <tr>
+                <td class="posicao">29</td>
+                <td>Paudalho</td>
+                <td class="pop">59 638</td>
+            </tr>
+            
+            <tr>
+                <td class="posicao">30</td>
+                <td>Limoeiro</td>
+                <td class="pop">59 125</td>
+            </tr>
+            
+            <!-- <tr>
+                <td class="posicao"></td>
+                <td></td>
+                <td class="pop"></td>
+            </tr> -->
+
+
 
 
             <tfoot>
                 <td class="posicao"> </td>
-                <th>Habitantes</th>
-                <th>0000</th>
+                <th scope="row">Habitantes</th>
+                <th scope="row">0000</th>
             </tfoot>
 
 
