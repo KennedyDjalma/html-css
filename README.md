@@ -33,3 +33,5 @@ Executar <a href="https://kennedydjalma.github.io/html-css/tabela-html-css/desaf
 Executar <a href="https://kennedydjalma.github.io/html-css/tabela-html-css/desafio3" target="_blank">Desafio 3</a>
 
 Executar <a href="https://kennedydjalma.github.io/html-css/tabela-html-css/desafio4" target="_blank">Tabela Desafio 4</a>
+
+Executar <a href="https://kennedydjalma.github.io/html-css/tabela-html-css/desafio5" target="_blank">Tabela Desafio 5</a>
