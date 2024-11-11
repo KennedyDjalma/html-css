@@ -10,12 +10,12 @@
             font-family: Arial, Helvetica, sans-serif;
             text-align: center;
         }
-        
+
     </style>
 </head>
 <body>
 
-    <h1>Meu Primeiro formulario</h1>
+    <h1>Meu Primeiro Formulario</h1>
     <form>
         <p>
             Nome:
@@ -50,6 +50,25 @@
         <p><input type="submit" value="Enviar"></p>
 
     </form>
+
+    <h1>Meu Terceiro Formulário</h1>
+    <!--  -->
+        <form method="post" action="cadastro.php" autocomplete="off"> <!-- autocomplete="off" serve para nao ficar surgerindo o nome no formulario -->
+            <!--method="post" é uma função que ocuta do link os dados que colocou no formulario; method="get" é o padrão que vai mostrar os dados no link -->
+    
+            <p>
+                <label for="inome">Nome:</label> 
+                <input type="text" name="Nome" id="inome"> 
+            </p>
+                 <!-- <label for="inome">Nome:</label>  serve para nominar o texto nome para a função que foi dada a ele, e ele vai ser validada com o id que foi dado  -->
+            <p>
+                <label for="isobrenome">Sobrenome:</label> 
+                <input type="text" name="Sobrenome" id="isobrenome">
+            </p>
+    
+            <p><input type="submit" value="Enviar"></p>
+    
+        </form>
 
     
 
