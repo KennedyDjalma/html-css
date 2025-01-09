@@ -35,8 +35,8 @@
     </form>
 
 
+     
     <h1>Meu Segundo Formulário</h1>
-    <!--  -->
     <form action="cadastro.php" autocomplete="off"> <!-- autocomplete="off" serve para nao ficar surgerindo o nome no formulario -->
 
         <p>
@@ -51,26 +51,43 @@
         <!-- O "minlength="8"" serve para determinar uma quantidade minima de caracteres, muito usados para SENHAS -->
 
         <p><input type="submit" value="Enviar"></p>
-
-    </form>
-
+    </form> 
+ 
     <h1>Meu Terceiro Formulário</h1>
     <!--  -->
         <form method="post" action="cadastro.php" autocomplete="off"> <!-- autocomplete="off" serve para nao ficar surgerindo o nome no formulario -->
             <!--method="post" é uma função que ocuta do link os dados que colocou no formulario; method="get" é o padrão que vai mostrar os dados no link -->
     
             <p>
-                <label for="idnome">Nome:</label> 
-                <input type="text" name="Nome" id="idnome"> 
+                <label for="inome3">Nome:</label> 
+                <input type="text" name="Nome" id="inome3" minlength="5"> 
             </p>
                  <!-- <label for="inome">Nome:</label>  serve para nominar o texto nome para a função que foi dada a ele, e ele vai ser validada com o id que foi dado; NAO PODE SER REPETIDO O LABEL COMO O SEGUNDO FORMULARIO, POR ISSO O TERCEIRO LABEL É DIFERENTE DO SEGUNDO  -->
             <p>
-                <label for="idsobrenome">Sobrenome:</label> 
-                <input type="text" name="Sobrenome" id="idsobrenome">
+                <label for="isobrenome3">Sobrenome:</label> 
+                <input type="text" name="Sobrenome" id="isobrenome3">
             </p>
     
             <p><input type="submit" value="Enviar"></p>
-    
+        </form>
+
+        <h1>Meu Quarto Formulário</h1>
+
+        <form action="cadastro.php" method="get" autocomplete="on">
+            <p>
+                <label for="inome4">Nome:</label>
+                <input type="text" name="nome" id="inome4" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </p>
+
+            <p>
+                <label for="imedia4">Média:</label>
+                <input type="number" name="média" id="imedia4" min="0" max="10" placeholder="0 a 10" step="0.5">
+            </p>
+
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         </form>
 
 </body>
