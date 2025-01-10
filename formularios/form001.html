@@ -54,7 +54,6 @@
     </form> 
  
     <h1>Meu Terceiro Formulário</h1>
-    <!--  -->
         <form method="post" action="cadastro.php" autocomplete="off"> <!-- autocomplete="off" serve para nao ficar surgerindo o nome no formulario -->
             
             <!--method="post" é uma função que ocuta do link os dados que colocou no formulario; method="get" é o padrão que vai mostrar os dados no link -->
@@ -72,7 +71,6 @@
         </form>
 
         <h1>Meu Quarto Formulário</h1>
-
         <form action="cadastro.php" method="get" autocomplete="on">
             <p>
                 <label for="inome4">Nome:</label>
@@ -106,11 +104,11 @@
                     <label for="itel5">Telefone:</label>
                     <input type="tel" name="tel" id="itel5" autocomplete="tel" pattern="^\(\d{2}\) \d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
                 </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
             </fieldset>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
         </form>
 
 </body>
