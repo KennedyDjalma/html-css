@@ -4,25 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <style>
+        div{
+            margin-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <h1>Exemplos de Formulários</h1>
     <form action="cadastro.php" method="get" autocomplete="on"></form>
 
-    <p>
+    <div>
         <label for="iano">Em que ano voce nasceu? </label>
         <input type="number" name="ano" id="iano" min="1990" max="2025" oninput="calcIdade()">
-    </p>
+    </div>
 
-    <p>
+    <div>
         <label for="iidade">Sua idade é: </label>
         <output id="iidade">0</output>
-    </p>
+    </div>
 
-    <p>
+    <div>
         <input type="submit" name="Enviar">
         <input type="reset" name="Limpar">
-    </p>
+    </div>
     
     <script>
         function calcIdade() {
