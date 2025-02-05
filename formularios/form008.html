@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <div>
-       <label for="iano">Em que ano voce nasceu? </label>
-       <input type="number" name="ano" id="iano" min="1990" max="2025" oninput="calcIdade()">
+        <label for="iano">Em que ano voce nasceu? </label>
+        <input type="number" name="ano" id="iano" min="1990" max="2025" oninput="calcIdade()">
     </div>
     <div>
         <label for="iidade">Sua idade é: </label>
@@ -20,10 +22,11 @@
     </div>
 
     <script>
-       function calcIdade() {
-        let atual = new Date() .getFullYear();
-        iidade.innerHTML = Number(atual) - Number(iano.value)
-       }
+        function calcIdade() {
+            let atual = new Date().getFullYear();
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
     </script>
 </body>
+
 </html>

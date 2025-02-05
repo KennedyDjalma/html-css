@@ -1,73 +1,80 @@
 <!DOCTYPE html>
 <html lang="pt-bt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela grande</title>
-            <style>
-                body {
-                    font-family: Arial, Helvetica, sans-serif;
-                    background-color: #a8dce7;
-                }
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #a8dce7;
+        }
 
-                h1 {
-                    text-align: center;
-                    color: #101422;
-                }
+        h1 {
+            text-align: center;
+            color: #101422;
+        }
 
-                table {
-                    background-color: #FFFFFF;
-                    margin: auto auto;
-                    width: 500px;
-                    border-collapse: collapse;
-                    position: relative; /* deixar o thead fixo */
-                }
+        table {
+            background-color: #FFFFFF;
+            margin: auto auto;
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+            /* deixar o thead fixo */
+        }
 
-                caption {
-                    font-size: 1.5em;
-                    font-weight: bolder;
-                    padding: 10px;
-                    background-color: #9ea7cd;
-                }
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: #9ea7cd;
+        }
 
-                thead > tr > th {/* caminho para deixar colado o thead */
-                    position: sticky;     /* colar no topo */
-                    top: -1px;     /* distancia do thead no topo */
-                    background-color:#272b3b ;
-                }
+        thead>tr>th {
+            /* caminho para deixar colado o thead */
+            position: sticky;
+            /* colar no topo */
+            top: -1px;
+            /* distancia do thead no topo */
+            background-color: #272b3b;
+        }
 
-                td,th {
-                    border: 1px solid #101422;
-                    padding: 10px;
-                }
+        td,
+        th {
+            border: 1px solid #101422;
+            padding: 10px;
+        }
 
-                .num {
-                    text-align: right;
-                }
+        .num {
+            text-align: right;
+        }
 
-                tr.regiao{
-                    background-color: #272b3b;
-                }
+        tr.regiao {
+            background-color: #272b3b;
+        }
 
-                .regiao {
-                    background-color: #272b3b;
-                    color: white;
-                }
+        .regiao {
+            background-color: #272b3b;
+            color: white;
+        }
 
-                thead {
-                    background-color: #272b3b;
-                    color: white;
-                }
+        thead {
+            background-color: #272b3b;
+            color: white;
+        }
 
-                tfoot {
-                    background-color: #272b3b;
-                    color: #FFFFFF;
-                }
-            </style>
+        tfoot {
+            background-color: #272b3b;
+            color: #FFFFFF;
+        }
+    </style>
 </head>
+
 <body>
 
-<!--         ANATOMIA PARA TABELAS GRANDES
+    <!--         ANATOMIA PARA TABELAS GRANDES
                   TABLE
                     THEAD
                         TR, TD, TH
@@ -77,190 +84,227 @@
                         TR, TD, TH
  -->
 
- <h1>Uso de Tabela Grande</h1>
- <table>
-     <caption>População por estado brasileiro</caption>
-     <thead>
-        <tr>
-            <th scope="col">Estado</th>
-            <th scope="col" style="width: 50px;">População</th>
-        </tr>
-    </thead>
+    <h1>Uso de Tabela Grande</h1>
+    <table>
+        <caption>População por estado brasileiro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
 
-    <tbody>
+        <tbody>
 
-        <tr class="regiao">
-            <th class="regiao">Brasil</th>
-            <td class="num">212.583.750</td>
-        </tr>
-
-
-        <tr class="regiao">
-            <th class="regiao">Norte</th>
-            <td class="num">18.669.345</td>
-        </tr>
-
-        <tr>
-            <td>Rondônia</td>
-            <td class="num">1.746.227</td>
-        </tr>
-
-        <tr>
-            <td>Pará</td>
-            <td class="num">8.664.306</td>
-        </tr>
-
-        <tr>
-            <td>Amapá</td>
-            <td class="num">802.837</td>
-        </tr>
-
-        <tr>
-            <td>Tocantins</td>
-            <td class="num">1.577.342</td>
-        </tr>
+            <tr class="regiao">
+                <th class="regiao">Brasil</th>
+                <td class="num">212.583.750</td>
+            </tr>
 
 
-        <tr class="regiao">
-            <th class="regiao">Nordeste</th>
-            <td class="num">57.112.096</td>
-        </tr>
+            <tr class="regiao">
+                <th class="regiao">Norte</th>
+                <td class="num">18.669.345</td>
+            </tr>
 
-        <tr>
-            <td>Maranhão</td>
-            <td class="num">7.010.960</td>
-        </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1.746.227</td>
+            </tr>
 
-        <tr>
-            <td>Piauí</td>
-            <td class="num">3.375.646</td>
-        </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.664.306</td>
+            </tr>
 
-        <tr>
-            <td>Ceará</td>
-            <td class="num">9.233.656</td>
-        </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">802.837</td>
+            </tr>
 
-        <tr>
-            <td>Rio Grande do Norte</td>
-            <td class="num">3.446.071</td>
-        </tr>
-
-        <tr>
-            <td>Paraíba</td>
-            <td class="num">4.145.040</td>
-        </tr>
-
-        <tr>
-            <td>Pernambuco</td>
-            <td class="num">9.539.029</td>
-        </tr>
-
-        <tr>
-            <td>Alagoas</td>
-            <td class="num">3.220.104</td>
-        </tr>
-
-        <tr>
-            <td>Sergipe</td>
-            <td class="num">2.291.077</td>
-        </tr>
-
-        <tr>
-            <td>Bahia</td>
-            <td class="num">14.850.513</td>
-        </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1.577.342</td>
+            </tr>
 
 
-        <tr class="regiao">
-            <th class="regiao">Sudeste</th>
-            <td class="num">88.617.693</td>
-        </tr>
+            <tr class="regiao">
+                <th class="regiao">Nordeste</th>
+                <td class="num">57.112.096</td>
+            </tr>
 
-        <tr>
-            <td>Minas Gerais</td>
-            <td class="num">21.322.691</td>
-        </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">7.010.960</td>
+            </tr>
 
-        <tr>
-            <td>Espírito Santo</td>
-            <td class="num">4.102.129</td>
-        </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.375.646</td>
+            </tr>
 
-        <tr>
-            <td>Rio de Janeiro</td>
-            <td class="num">17.219.679</td>
-        </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.233.656</td>
+            </tr>
 
-        <tr>
-            <td>São Paulo</td>
-            <td class="num">45.973.194</td>
-        </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.446.071</td>
+            </tr>
+
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.145.040</td>
+            </tr>
+
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.539.029</td>
+            </tr>
+
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.220.104</td>
+            </tr>
+
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2.291.077</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.850.513</td>
+            </tr>
 
 
-        <tr class="regiao">
-            <th class="regiao">Sul</th>
-            <td class="num">31.113.021</td>
-        </tr>
+            <tr class="regiao">
+                <th class="regiao">Sudeste</th>
+                <td class="num">88.617.693</td>
+            </tr>
 
-        <tr>
-            <td>Paraná</td>
-            <td class="num">11.824.665</td>
-        </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.322.691</td>
+            </tr>
 
-        <tr>
-            <td>Santa Catarina</td>
-            <td class="num">8.058.441</td>
-        </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.102.129</td>
+            </tr>
 
-        <tr>
-            <td>Rio Grande do Sul</td>
-            <td class="num">11.229.915</td>
-        </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.219.679</td>
+            </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.973.194</td>
+            </tr>
 
 
-        <tr class="regiao">
-            <th class="regiao">Centro-Oeste</th>
-            <td class="num">17.071.595</td>
-        </tr>
+            <tr class="regiao">
+                <th class="regiao">Sul</th>
+                <td class="num">31.113.021</td>
+            </tr>
 
-        <tr>
-            <td>Mato Grosso do Sul</td>
-            <td class="num">2.901.895</td>
-        </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.824.665</td>
+            </tr>
 
-        <tr>
-            <td>Mato Grosso</td>
-            <td class="num">3.836.399</td>
-        </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">8.058.441</td>
+            </tr>
 
-        <tr>
-            <td>Goiás </td> 
-            <td class="num">7.350.483</td>
-        </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.229.915</td>
+            </tr>
 
-        <tr>
-            <td>Distrito Federal</td>
-            <td class="num">2.982.818</td>
-        </tr>
 
-    </tbody>
+            <tr class="regiao">
+                <th class="regiao">Centro-Oeste</th>
+                <td class="num">17.071.595</td>
+            </tr>
 
-    <tfoot>
-        <tr>
-            <th scope="row">Total de Habitantes</th>
-            <td class="num"> <strong> 212.583.750 </strong> </td>
-        </tr>
-    </tfoot>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.901.895</td>
+            </tr>
 
- </table>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.836.399</td>
+            </tr>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt. Aperiam minus aliquam soluta!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt. Aperiam minus aliquam soluta!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt. Aperiam minus aliquam soluta!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt. Aperiam minus aliquam soluta!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt. Aperiam minus aliquam soluta!</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt. Aperiam minus aliquam soluta!</p>
-    
+            <tr>
+                <td>Goiás </td>
+                <td class="num">7.350.483</td>
+            </tr>
+
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">2.982.818</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"> <strong> 212.583.750 </strong> </td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo
+        distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem
+        error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium
+        repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt.
+        Aperiam minus aliquam soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo
+        distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem
+        error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium
+        repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt.
+        Aperiam minus aliquam soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo
+        distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem
+        error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium
+        repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt.
+        Aperiam minus aliquam soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo
+        distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem
+        error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium
+        repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt.
+        Aperiam minus aliquam soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo
+        distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem
+        error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium
+        repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt.
+        Aperiam minus aliquam soluta!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, cumque numquam pariatur quod laboriosam saepe illo
+        distinctio ipsa earum tempora placeat ipsam ex dicta dignissimos modi? Labore enim exercitationem similique.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab illo quos iste suscipit, doloribus placeat rem
+        error animi itaque laborum aliquid blanditiis at alias, iusto voluptatem, obcaecati perspiciatis. Neque, illo.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo fugit nesciunt velit! Quibusdam praesentium
+        repudiandae aliquam eos accusantium fugiat, laborum totam repellat aspernatur veritatis temporibus deserunt.
+        Aperiam minus aliquam soluta!</p>
+
 </body>
+
 </html>

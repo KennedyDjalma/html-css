@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas responsivas</title>
 
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
         }
 
-        table{
+        table {
             width: 600px;
             border-collapse: collapse;
         }
@@ -20,8 +21,9 @@
             font-weight: bolder;
             padding: 20px;
         }
-        
-        th ,td {
+
+        th,
+        td {
             border: 1px solid black;
             padding: 10px;
         }
@@ -29,124 +31,130 @@
         tr:nth-child(even) {
             background-color: rgb(197, 197, 197);
         }
-            /*  usando o overflow-x:auto; vai fazer com que tenha rolamento lateral apenas na tabela e nao na pagina interira, para funcionar tem que colocar apenas a tabela no html dentro de uma div  e usar eoverflow no css.  */
+
+        /*  usando o overflow-x:auto; vai fazer com que tenha rolamento lateral apenas na tabela e nao na pagina interira, para funcionar tem que colocar apenas a tabela no html dentro de uma div  e usar eoverflow no css.  */
         div#container {
             overflow-x: auto;
         }
-
     </style>
 
 </head>
+
 <body>
 
     <h1>Tabelas em telas pequenas</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit numquam voluptate obcaecati quasi soluta architecto consequatur magni inventore pariatur assumenda. Asperiores aliquam adipisci corporis soluta necessitatibus praesentium ut alias modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam beatae sequi doloribus eveniet ipsum, eius similique voluptates temporibus, molestias vel, voluptatem amet perspiciatis ipsa quis ea provident. Quam, cumque consequuntur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit numquam voluptate obcaecati quasi soluta
+        architecto consequatur magni inventore pariatur assumenda. Asperiores aliquam adipisci corporis soluta
+        necessitatibus praesentium ut alias modi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+        beatae sequi doloribus eveniet ipsum, eius similique voluptates temporibus, molestias vel, voluptatem amet
+        perspiciatis ipsa quis ea provident. Quam, cumque consequuntur.</p>
 
-<div id="container">
-    <table>
-        <caption>Tabelas responsivas</caption>
-        <thead>
-            <tr>
-                <th>Produto</th>
-                <th>Jan</th>
-                <th>Fev</th>
-                <th>Mar</th>
-                <th>Abr</th>
-                <th>Mai</th>
-                <th>Jun</th>
-                <th>Jul</th>
-                <th>Ago</th>
-                <th>Set</th>
-                <th>Out</th>
-                <th>Nov</th>
-                <th>Dez</th>
-            </tr>
-        </thead>
-    
-        <tbody>
-            <tr>
-                <td>Amazon echo</td>
-                <td>01</td>
-                <td>02</td>
-                <td>03</td>
-                <td>04</td>
-                <td>05</td>
-                <td>06</td>
-                <td>07</td>
-                <td>08</td>
-                <td>09</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-            </tr>
-    
-            <tr>
-                <td>Net Flix</td>
-                <td>01</td>
-                <td>02</td>
-                <td>03</td>
-                <td>04</td>
-                <td>05</td>
-                <td>06</td>
-                <td>07</td>
-                <td>08</td>
-                <td>09</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-            </tr>
-    
-            <tr>
-                <td>Globo play</td>
-                <td>01</td>
-                <td>02</td>
-                <td>03</td>
-                <td>04</td>
-                <td>05</td>
-                <td>06</td>
-                <td>07</td>
-                <td>08</td>
-                <td>09</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-            </tr>
-    
-            <tr>
-                <td>Motorola</td>
-                <td>01</td>
-                <td>02</td>
-                <td>03</td>
-                <td>04</td>
-                <td>05</td>
-                <td>06</td>
-                <td>07</td>
-                <td>08</td>
-                <td>09</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-            </tr>
-    
-            <tr>
-                <td>Monareta</td>
-                <td>01</td>
-                <td>02</td>
-                <td>03</td>
-                <td>04</td>
-                <td>05</td>
-                <td>06</td>
-                <td>07</td>
-                <td>08</td>
-                <td>09</td>
-                <td>10</td>
-                <td>11</td>
-                <td>12</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
+    <div id="container">
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
 
-    
+            <tbody>
+                <tr>
+                    <td>Amazon echo</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>Net Flix</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>Globo play</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>Motorola</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+
+                <tr>
+                    <td>Monareta</td>
+                    <td>01</td>
+                    <td>02</td>
+                    <td>03</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>06</td>
+                    <td>07</td>
+                    <td>08</td>
+                    <td>09</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
 </body>
+
 </html>
