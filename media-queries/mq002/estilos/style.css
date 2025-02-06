@@ -17,6 +17,7 @@ html, body{
 }
 
 h1{
+    text-align: center;
     color: aliceblue;
     text-shadow: 2px 2px 0px #0f1b74;
     padding: 10px;
