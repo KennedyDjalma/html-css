@@ -36,11 +36,11 @@ Grandes: acima de 1200px
         text-decoration: overline;
     }
 
-    img#phone {display: none;}
-    img#tablet { display: none;}
-    img#print { display: block;}
-    img#pc { display: none;}
-    img#tv { display: none;}
+    img#phone   {display: none;}
+    img#tablet  {display: none;}
+    img#print   {display: block;}
+    img#pc      {display: none;}
+    img#tv      {display: none;}
 
 }
 
@@ -51,11 +51,11 @@ Grandes: acima de 1200px
         background-image: url(../imagens/back-tablet.jpg);
     }
 
-    img#phone {display: none;}
-    img#tablet {display: block;}
-    img#print {display: none;}
-    img#pc {display: none;}
-    img#tv {display: none;}
+    img#phone   {display: none;}
+    img#tablet  {display: block;}
+    img#print   {display: none;}
+    img#pc      {display: none;}
+    img#tv      {display: none;}
 }
 
 @media screen and (min-width:992px) and (max-width:1200px) {
@@ -65,11 +65,11 @@ Grandes: acima de 1200px
         background-image: url(../imagens/back-pc.jpg);
     }
 
-    img#phone {display: none;}
-    img#tablet {display: none;}
-    img#print {display: none;}
-    img#pc {display: block;}
-    img#tv {display: none;}
+    img#phone   {display: none;}
+    img#tablet  {display: none;}
+    img#print   {display: none;}
+    img#pc      {display: block;}
+    img#tv      {display: none;}
 }
 
 @media screen and (min-width: 1200px) {
@@ -79,9 +79,13 @@ Grandes: acima de 1200px
         background-image: url(../imagens/back-tv.jpg);
     }
 
-    img#phone {display: none;}
-    img#tablet {display: none;}
-    img#print {display: none;}
-    img#pc {display: none;}
-    img#tv {display: block;}
+    main{
+        width: 700px;
+    }
+
+    img#phone   {display: none;}
+    img#tablet  {display: none;}
+    img#print   {display: none;}
+    img#pc      {display: none;}
+    img#tv      {display: block;}
 }
