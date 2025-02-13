@@ -18,12 +18,26 @@ header > h1 {
     text-align: center;
 }
 
+#burguer { /* configurações do menu hamburgue */
+    background-color: rgb(65, 64, 64);
+    color: white;
+    display: block; /*  */
+    text-align: center; /*  */
+    padding: 10px;
+    cursor: pointer;
+}
+
+#burguer:hover{ /* configurações do menu hamburgue */
+    background-color: white;
+    color: black;
+}
+
 menu{
-    display:block ; 
+    display:none ; 
 }
 
 menu > ul{
-    list-style-type:none ;
+    list-style-type:none ; /* remover o detalhamento dos links */
 }
 
 menu > ul >li > a {
@@ -52,9 +66,9 @@ main{
 article > h2{
     padding-bottom:10px ;
 }
-
+/*  */
 article > p {
-    text-align: justify;
-    margin-bottom: 20px;
-    text-indent: 10px;
+    text-align: justify; /* justificar o texto */
+    margin-bottom: 20px; /* espaçamento inferior */
+    text-indent: 10px; /* paragrafo */
 }
