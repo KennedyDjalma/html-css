@@ -1,0 +1,20 @@
+
+
+@media screen and (min-width:768px) { /* configuração para mostrar o menu burguer so em telas inferiores a 768px */
+    i#burguer{
+        display: none;
+    }
+
+    menu{ /* configuração para mostrar o menu em tela maior */
+        display: block;
+    }
+
+    menu > ul > li{ /* configuração para deixar o menu um ao lado do outro */
+        display: inline-block;
+    }
+
+    main{ /* se a tela for grande o menu so vai mostrar até 768px */
+        width: 768px;
+    }
+}
+/*  */
