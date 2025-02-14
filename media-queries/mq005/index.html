@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <!--  -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" /> <!-- Link para o uso do menu hambuguer -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <!-- Link para o uso do menu hambuguer -->
 
     <link rel="stylesheet" href="estilo/style.css">
 
@@ -18,7 +21,7 @@
         <h1>Meu Site</h1>
 
         <i id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
-        
+
         <menu id="imenu">
             <ul>
                 <li><a href="#">Opção1</a></li>
@@ -34,22 +37,31 @@
         <article>
             <h2>Testando Media Query</h2>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quos consectetur doloremque dolorum repellendus cupiditate suscipit eligendi, eaque, voluptas rerum, blanditiis minus quibusdam explicabo dicta molestiae repellat hic mollitia vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis sunt dolores esse maiores obcaecati nisi, molestiae doloremque. Quia ex optio perspiciatis at. At amet neque quo. Natus, rerum molestias.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quos consectetur doloremque dolorum
+                repellendus cupiditate suscipit eligendi, eaque, voluptas rerum, blanditiis minus quibusdam explicabo
+                dicta molestiae repellat hic mollitia vero. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Similique nobis sunt dolores esse maiores obcaecati nisi, molestiae doloremque. Quia ex optio
+                perspiciatis at. At amet neque quo. Natus, rerum molestias.
             </p>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus, quibusdam commodi placeat unde accusamus fugiat cumque, blanditiis dolorum qui vitae earum? Ipsa veniam inventore repellat ab placeat unde est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis sunt dolores esse maiores obcaecati nisi, molestiae doloremque. Quia ex optio perspiciatis at. At amet neque quo. Natus, rerum molestias.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam doloribus, quibusdam commodi placeat
+                unde accusamus fugiat cumque, blanditiis dolorum qui vitae earum? Ipsa veniam inventore repellat ab
+                placeat unde est! Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis sunt dolores
+                esse maiores obcaecati nisi, molestiae doloremque. Quia ex optio perspiciatis at. At amet neque quo.
+                Natus, rerum molestias.
 
             </p>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquid odio expedita, explicabo error repellat deserunt possimus laudantium. Adipisci itaque laudantium nam blanditiis eius dolore unde provident delectus corporis fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique nobis sunt dolores esse maiores obcaecati nisi, molestiae doloremque. Quia ex optio perspiciatis at. At amet neque quo. Natus, rerum molestias.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate aliquid odio expedita, explicabo
+                error repellat deserunt possimus laudantium. Adipisci itaque laudantium nam blanditiis eius dolore unde
+                provident delectus corporis fuga. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
+                nobis sunt dolores esse maiores obcaecati nisi, molestiae doloremque. Quia ex optio perspiciatis at. At
+                amet neque quo. Natus, rerum molestias.
             </p>
         </article>
     </main>
+
     <script>
-        /* se (tela.larguraTela >= 768) {
-        imenu.style.display = "bloco"
-        } se não {
-         imenu.style.display = "não mostrar"} */
         function mudouTamanho() {
             if (window.innerWidth >= 768) {
                 imenu.style.display = "block"
@@ -60,13 +72,14 @@
 
         /*  */
         function clickMenu() {
-            if(imenu.style.display == "block") {
+            if (imenu.style.display == "block") {
                 imenu.style.display = "none"
             } else {
                 imenu.style.display = "block"
             }
         }
     </script>
-    
+
 </body>
+
 </html>
