@@ -62,23 +62,23 @@
     </main>
 
     <script>
-        function mudouTamanho() {
-            if (window.innerWidth >= 768) {
-                imenu.style.display = "block"
-            } else {
-                imenu.style.display = "none"
-            }
-        }
-
         /*  */
-        function clickMenu() {
+        function clickMenu() { /* função feita para dar efeito ao click no hamburguer e encolher e espandir o menú */
             if (imenu.style.display == "block") {
                 imenu.style.display = "none"
             } else {
                 imenu.style.display = "block"
             }
         }
-    </script>
+
+        function mudouTamanho() { /* função feita para mostrar o menú depois que encolher, "estava dando erro depois que encolhia o hamburguer" */
+            if (window.innerWidth >= 768) {
+                imenu.style.display = "block"
+            } else {
+                imenu.style.display = "none"
+            }
+        }
+        </script>
 
 </body>
 
